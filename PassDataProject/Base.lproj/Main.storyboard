@@ -12,7 +12,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PassDataProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pass Data Project" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xc4-8S-kH3">
@@ -44,7 +44,6 @@
                                 </state>
                                 <connections>
                                     <action selector="sendPressedWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e1r-iK-0e3"/>
-                                    <segue destination="Kr3-yh-O2R" kind="show" id="1EQ-DI-0di"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -64,9 +63,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="dLV-bS-iEn"/>
                     <connections>
                         <outlet property="loginTextField" destination="iCR-Sv-xt4" id="D6y-2E-Xa2"/>
                         <outlet property="passwordTextField" destination="VHd-zH-WSj" id="77W-ug-Dpl"/>
+                        <segue destination="Kr3-yh-O2R" kind="show" identifier="detailSegue" id="KLz-Ck-hqf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -95,6 +96,7 @@
                                 <connections>
                                     <action selector="sendPressedWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ezz-6p-ozF"/>
                                     <action selector="sendPressedWithButton:" destination="Kr3-yh-O2R" eventType="touchUpInside" id="PVT-WM-iM0"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="s57-Hh-rRh"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ml8-Xn-gro">
